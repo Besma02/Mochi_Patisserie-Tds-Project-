@@ -1,0 +1,101 @@
+.menu{
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 0;
+    text-decoration: none;
+    margin-left: 20px auto;
+   
+  
+}
+.navbar{
+    margin-left: auto;
+
+}
+.link{
+    text-decoration: none;
+    padding-left: 20px;
+    color: black;
+
+   
+   
+}
+.link:hover{
+    color: #f135f1;
+  }
+.signin{
+    background-color: #f135f1;
+    color: #fff;
+     border: 0;
+     padding: 0 10px;
+     border-radius: 5px;
+     cursor: pointer;
+     text-decoration: none;
+     margin-left: 20px;
+}
+.signin:hover{
+    background-color: transparent;
+    color: #f135f1;
+    border: 2px solid #f135f1;
+    
+}
+#basic-navbar-nav{
+    line-height: 40px;
+    
+}
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: #f135f1 !important;
+    --bs-navbar-hover-color: #f8e8f8 !important;
+    --bs-navbar-disabled-color: #fad7fa !important;
+    --bs-navbar-active-color: #fde3fd !important;
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: #f135f1 !important;
+    --bs-navbar-brand-hover-color: #fce7fc !important;
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 0.1rem ;
+    --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%280, 0, 0, 0.55%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e);
+    --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1)!important;
+    --bs-navbar-toggler-border-radius: 0.1rem ;
+    --bs-navbar-toggler-focus-width: 0.1rem !important ;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+
+/*nav cart*/
+.nav-cart{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-right: 0;
+}
+.cart-quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width:30px;
+    border-radius:50%;
+    background-color: #f135f1;
+    color:white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+
+}
+.logo_mochiPink{
+    width:100px;
+}

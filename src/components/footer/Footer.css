@@ -1,0 +1,43 @@
+*{box-sizing:border-box;}
+footer{
+    width: 100%;
+    background: #f135f1;
+    color: white;
+    padding: 20px 40px;
+    font-family: 'Tajawal', sans-serif;
+   
+   
+   
+  
+}
+footer h4{
+   padding: 10px 20px;
+   font-size: 1.08em;
+   
+}
+footer p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.08em;
+    
+ }
+/*horaire*/
+ .horaire{
+    width: 240px;
+    margin-right: 0;
+    background-color: #f0f0f3;
+    padding: 20px;
+    font-size: 16px;
+    color: rgb(43, 42, 42);
+    text-align: right;
+    opacity:0.8;
+    
+  }
+  .horaire h3{
+   text-align: center;
+   font-weight: bold;
+  }
+.logo_mochi{
+    width:150px;
+    margin-top: 60px;
+}
