@@ -1,11 +1,14 @@
-import React from 'react'
+
 import'./Footer.css'
 import { PhoneIcon,EmailIcon,SpinnerIcon } from '@chakra-ui/icons'
 import { Divider } from "@chakra-ui/react"
 import logo_mochi from './../../assets/logo_mochi.png'
+import { BackToTopButton } from '../../BackToTopButton/BackToTopButton'
 export const Footer = () => {
+  
   return (
-    <footer className='container-fluid'>
+    <footer className='container-fluid'  >
+     <BackToTopButton/>
       <div className='row'>
         <div className='col-sm-12 col-md-6 col-lg-3'>
             <EmailIcon w={8} h={8} color="white.500" marginLeft="10%"/>

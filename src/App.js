@@ -1,6 +1,5 @@
 
 import { Acceuil } from "./components/Acceuil/Acceuil";
-
 import { Contact } from "./components/Contact/Contact";
 import { Navs } from "./components/Navs/Navs";
 import { Produits } from "./components/Produits/Produits";
@@ -14,11 +13,14 @@ import { Login } from "./components/SignIN/Login";
 
 
 function App() {
+ 
+
+  
    
   return (<>
     <BrowserRouter>
          <div className="App">
-      <Navs />
+      <Navs  />
       <Routes >
         <Route path="/" element={ <Acceuil/>}/>
         <Route path="/Produits" element={ <Produits/>}/>
@@ -30,6 +32,7 @@ function App() {
         <Route path="/Contact" element={ <Contact/>}/>
         
      </Routes>
+     
      <Footer/>
      </div>
     </BrowserRouter>

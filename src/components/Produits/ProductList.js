@@ -51,7 +51,7 @@ export const ProductList = () => {
  
   return (
     <div>
-    <h1 style={{textAlign:"center",color:"#583278",marginTop:"20px"}}>Products List</h1>
+    <h1 style={{textAlign:"center",color:"#583278",margin:"20px 0px",fontSize:"2.4em",fontWeight:"bold"}}>Products List</h1>
    
    
     <SimpleGrid minChildWidth={200} gap="10px" bg="gray.50" p="20px">

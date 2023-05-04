@@ -1,6 +1,6 @@
-import React,{useEffect} from 'react'
+import React,{useEffect,useState} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { removeFromCart,decreaseCart,addToCart,clearCart, getTotals } from '../../feature/CartSlice'
 import { useToast } from '@chakra-ui/react'
 import { UnlockIcon } from "@chakra-ui/icons"
@@ -8,6 +8,7 @@ import { UnlockIcon } from "@chakra-ui/icons"
 
 
 export const Cart = () => {
+ 
 
   const toast=useToast()
  const dispatch=useDispatch()
@@ -28,6 +29,7 @@ export const Cart = () => {
      icon: <UnlockIcon />,
     })
   }
+ 
   const handleAddToCart = (cartItem) => {
     dispatch(addToCart(cartItem));
     toast({
@@ -39,6 +41,10 @@ export const Cart = () => {
       status: 'info',
      icon: <UnlockIcon />,
     })
+    
+   
+  
+
   };
   const handleDecreaseCart = (cartItem) => {
     dispatch(decreaseCart(cartItem));
