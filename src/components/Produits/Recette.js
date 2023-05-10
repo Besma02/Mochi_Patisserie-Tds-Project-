@@ -2,6 +2,7 @@ import React from 'react'
 import './Produits.css'
 import patissiere from './../../assets/patissiere.png'
 import fouets from './../../assets/fouets.png'
+import { Link } from 'react-router-dom'
 
 export const Recette = () => {
   return (
@@ -11,7 +12,7 @@ export const Recette = () => {
             <h1 >
                 Mochi Produits
             </h1>
-            <button>découvrez nos produits</button>
+           <Link to="/" ><button>découvrez nos produits</button></Link>
             </div>
       </header>
       

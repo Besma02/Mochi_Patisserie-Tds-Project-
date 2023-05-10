@@ -1,6 +1,6 @@
 import { Input,Button } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
-
+import {motion} from "framer-motion"
 import React,{useState} from 'react'
 import { db } from "../../config/firebase"
 import{collection,addDoc} from "firebase/firestore"
@@ -18,7 +18,7 @@ export const Newsletter = () => {
         }
     }
   return (
-    <div className="container-fluid "  style={{backgroundColor:"#f4f1f3"}} >
+    <motion.div inital={{y:'100vh'}} animate={{y:20}} transition={{delay:0.5,type:"spring"}} className="container-fluid "  style={{backgroundColor:"#f4f1f3"}} >
          <div className="row">
          <div className="col-sm-12 col-md-6 " >
             <h2 style={{margin:"20px 40px ",fontSize:"32px",fontWeight:700}}>Pour vos informations</h2>
@@ -30,11 +30,15 @@ export const Newsletter = () => {
         <form onSubmit={handleSubmit}>
             <FormLabel>Email : </FormLabel>
             <Input w="50%" bg="white" marginRight="10px"  type="email" onChange={e=>setEmail(e.target.value)}/>
-            <Button type="submit">submit</Button>
+            <motion.button type="submit" whileHover={{ 
+            scale: 1.1, 
+            textShadow: "0px 0px 8px rgb(255,255,255)",
+            boxShadow: "0px 0px 8px rgb(255,255,255)",
+          }}>submit</motion.button>
         </form>
         </div>
        
         </div>
-      </div>
+      </motion.div>
   )
 }

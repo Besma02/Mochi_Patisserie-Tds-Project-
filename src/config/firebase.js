@@ -3,13 +3,14 @@ import { initializeApp } from "firebase/app";
 import{getFirestore} from "firebase/firestore"
 import{getAuth} from "firebase/auth"
 const firebaseConfig = {
-  apiKey: "AIzaSyAwCjNH4Y93IiW_gyB2zYFsOtkCSHPZJBE",
-  authDomain: "mochipatisserie-53e82.firebaseapp.com",
-  projectId: "mochipatisserie-53e82",
-  storageBucket: "mochipatisserie-53e82.appspot.com",
-  messagingSenderId: "890147081254",
-  appId: "1:890147081254:web:4d8680505958544488eae7"
+  apiKey: "AIzaSyD3L7R1j5sSg0yuGN8YX0KfzmNwmPOSda4",
+  authDomain: "mochipatisserie-54b5c.firebaseapp.com",
+  projectId: "mochipatisserie-54b5c",
+  storageBucket: "mochipatisserie-54b5c.appspot.com",
+  messagingSenderId: "756423266123",
+  appId: "1:756423266123:web:8035f920dc9652fdbfe2ce"
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
