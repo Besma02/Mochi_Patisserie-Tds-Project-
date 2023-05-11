@@ -8,6 +8,8 @@ import { addToCart } from '../../feature/CartSlice'
 import { useToast } from '@chakra-ui/react'
 import { UnlockIcon } from "@chakra-ui/icons"
 import { useNavigate } from 'react-router-dom'
+import {motion} from "framer-motion"
+
 
 
 export const ProductList = () => {
@@ -51,13 +53,18 @@ export const ProductList = () => {
  
   return (
     <div>
-    <h1  style={{textAlign:"center",color:"#583278",margin:"20px 0px",fontSize:"2.4em",fontWeight:"bold"}}>Products List</h1>
+     
+   <motion.h1 style={{textAlign:"center",color:"#583278",margin:"20px 0px",fontSize:"2.4em",fontWeight:"bold"}} inital={{x:400}} animate={{x:-10}} transition={{delay:1.5,type:"spring",stifness:"120"}}>Products List</motion.h1> 
    
    
-    <SimpleGrid minChildWidth={200} gap="10px" bg="gray.50" p="20px">
+    <SimpleGrid minChildWidth={200} gap="10px" bg="gray.50" p="20px" >
     {productList.map(product=>(
          
-        
+            <motion.div whileHover={{ 
+              scale: 1.1, 
+              textShadow: "0px 0px 8px rgb(255,255,255)",
+              boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}>
             <Card bg="white" p="5px"  marginLeft="10px" borderTop="8px" borderColor="#583278" >
                 <CardHeader>
                 <Heading as="h3" fontSize="1.2em" marginBottom="20px">{product.title}</Heading>
@@ -72,7 +79,7 @@ export const ProductList = () => {
                 </CardFooter>
 
             </Card>
-            
+            </motion.div>
             
         ))}
        
