@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "name": "Mochi Patisserie",
+      "price": "40",
+      "like": "10",
+      "quantity": "8",
+      "description": "",
+      "id": 20
+    },
+    {
+      "name": "iPhone",
+      "price": "7",
+      "like": "10",
+      "quantity": "12",
+      "description": "good",
+      "id": 21
+    }
+   
+        ]
+      
+}

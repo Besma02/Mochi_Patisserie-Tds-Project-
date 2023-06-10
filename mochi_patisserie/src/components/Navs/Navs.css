@@ -28,7 +28,7 @@
     background-color: #f135f1;
     color: #fff;
      border: 0;
-     padding: 2px 10px;
+     padding: 0 10px;
      border-radius: 5px;
      cursor: pointer;
      text-decoration: none;
@@ -71,4 +71,31 @@
     align-items: center;
     justify-content: space-between;
     padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+
+/*nav cart*/
+.nav-cart{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-right: 0;
+}
+.cart-quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width:30px;
+    border-radius:50%;
+    background-color: #f135f1;
+    color:white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+
+}
+.logo_mochiPink{
+    width:100px;
 }

@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.servicehead{
+    background: url("../../assets/images/headservice3.png") center no-repeat ;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  
+    
+
+}
+.headserv{
+    width: 50%;
+    border: 2px solid red;
+}
+.servicehead h1{
+    position: absolute;
+    top:10%;
+    right: 10%;
+    max-width: 400px;
+    color: white;
+     font-size:3.2em;
+    font-family: 'Paytone One', sans-serif;
+    font-family: 'Tangerine', cursive;
+}
+.servicehead button{
+    position: absolute;
+    top:60%;
+    right: 17%;
+    max-width: 400px;
+    color: white;
+    background-color:  #d663bb;
+    border: none;
+    border-radius: 5px;
+    
+}
+.servicehead button:hover{
+    background-color: #f0899f;
+    color: white;
+  
+}
+/*serviceBody*/
+.entete h2{
+   font-size:3.2em;
+   color: #583278;
+   margin-left: 20%;
+   line-height: 3.6rem;
+   margin-bottom: 20px;
+}
+.entete p{
+    
+    font-size: 24px;
+    margin-left: 20%;
+}
+.entete-btn{
+    background-color:#d663bb;
+    color: white;
+    margin-left: 50%;
+    margin-top: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    
+}
+.entete-btn:hover{
+    background-color: #f0899f;
+    color: white;
+  
+}
+
+
+.main h2{
+  
+  margin-bottom: 0;
+  font-size:2.2em;
+   color: #583278;
+   margin-left: 20%;
+   line-height: 3rem;
+}
+
+  
+
+.main p{
+    width: 80%;
+    font-size:18px;
+    margin-left: 20%;
+   
+}
+
+.main2 p{
+    width: 80%;
+    font-size:18px;
+    padding: 5px;
+    height:"150px";
+   
+   
+}
+
+@media (max-width: 400px) {
+    .hygiene{
+        margin-top: 20%;
+    }
+    .main{
+        margin-bottom: 10%;
+    }
+    .livrImg{
+        margin-right:20%;
+        max-width: 100%;
+        width: 100%;
+    }
+   .process{
+    text-align: start ! ;
+    font-weight: bold;
+      font-size:3.2em !important;
+      line-height: 1.2em !important ;
+      width: 100% !important;
+      max-width: 100% !important;
+      
+     
+   }
+   .head button{
+    margin-top: 40px;
+    
+   }
+   .head h1{
+    
+    margin-left: 24%;
+    
+   }
+  }

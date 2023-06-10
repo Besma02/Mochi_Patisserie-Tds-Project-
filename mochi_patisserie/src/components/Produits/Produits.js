@@ -1,7 +1,22 @@
-import React from 'react'
+
+import { ProductList } from "./ProductList"
+import { Recette } from "./Recette"
+
+
+
+
+
 
 export const Produits = () => {
+
   return (
-    <div>Produits</div>
+    <div>
+ 
+      <Recette/>
+      <ProductList/>
+
+      
+     
+    </div>
   )
 }
