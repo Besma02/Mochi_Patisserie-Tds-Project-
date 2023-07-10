@@ -69,7 +69,7 @@ export const Navs = () => {
         <Navbar.Toggle   />
         <Navbar.Collapse id="basic-navbar-nav"  >
           <Nav className="navbar">
-            <NavLink  to="/"  className="link">Acceuil</NavLink>
+            <NavLink  to="/"  className="link">Accueil</NavLink>
             <NavLink to="/Produits" className="link">Produits</NavLink>
             <NavLink to="/Services" className="link">Services</NavLink>
             <NavLink to="/Contact" className="link">Contact</NavLink>

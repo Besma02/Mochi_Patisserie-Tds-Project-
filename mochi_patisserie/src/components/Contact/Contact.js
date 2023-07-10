@@ -8,17 +8,17 @@ import {
   Button,
   VStack,
   HStack,
-  background,
+ 
   Textarea,
   Checkbox,
   Box,
-  Heading,
-  Text
+ 
+  
 } from "@chakra-ui/react";
 import { Formik, Form, Field } from "formik";
-import { Container } from "react-bootstrap";
+
 import * as yup from "yup";
-import { useState } from 'react';
+
 import { addDoc, collection, doc, setDoc } from 'firebase/firestore';
 import { db } from '../../config/firebase';
 import {  useNavigate } from 'react-router-dom';
