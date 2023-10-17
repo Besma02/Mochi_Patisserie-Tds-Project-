@@ -1,0 +1,19 @@
+.info{
+    background-color: white;
+}
+@media (max-width: 995px) {
+    .info{
+      
+      padding:0;
+      background-color: white;
+     
+     
+  }
+  .info h3,Text{
+    
+    font-size: 8px;
+    margin-left: -45%;
+   
+}
+    
+  }

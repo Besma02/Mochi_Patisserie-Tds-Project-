@@ -22,7 +22,7 @@ import * as yup from "yup";
 import { addDoc, collection, doc, setDoc } from 'firebase/firestore';
 import { db } from '../../config/firebase';
 import {  useNavigate } from 'react-router-dom';
-
+import './Contact.css'
 const validateSchema = yup.object().shape({
   email: yup
     .string()
@@ -129,7 +129,7 @@ export const Contact = () => {
     </Formik>
     
 
-    <Box fontSize="14px"  p="20px" margin="auto"  >
+    <Box fontSize="14px"  p="20px" margin="auto"  className='info' >
       <HStack  marginLeft="25%" >
        <motion.h3 style={{fontWeight:"bold"}} inital={{y:400}} animate={{y:-10}} transition={{delay:1.5,type:"spring",stifness:"120"}}>Email:</motion.h3>
       <motion.Text inital={{y:400}} animate={{y:-10}} transition={{delay:1.5,type:"spring",stifness:"120"}} >MochiPatisserie@gmail.com</motion.Text>

@@ -80,14 +80,14 @@ const uid = GetUserUid();
    
    
     <SimpleGrid minChildWidth={200} gap="10px" bg="gray.50" p="20px" >
-    {productList.map(product=>(
+    {productList.map((product,index)=>(
          
             <motion.div whileHover={{ 
               scale: 1.1, 
               textShadow: "0px 0px 8px rgb(255,255,255)",
               boxShadow: "0px 0px 8px rgb(255,255,255)",
             }}>
-            <Card bg="white" p="5px"  marginLeft="10px" borderTop="8px" borderColor="#583278" >
+            <Card bg="white" p="5px"  marginLeft="10px" borderTop="8px" borderColor="#583278" key={index} >
                 <CardHeader>
                 <Heading as="h3" fontSize="1.2em" marginBottom="20px">{product.title}</Heading>
                  <img src={product.url}/>
